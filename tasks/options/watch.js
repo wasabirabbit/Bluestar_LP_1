@@ -4,14 +4,14 @@ module.exports = {
   },
 scripts: {
     files: ['js/*.js'],
-    tasks: ['concat','uglify'],
+    tasks: ['concat','uglify','gh-pages'],
     options: {
       spawn: false,
     }
   },
 
-  devWatch: {
-  		files: ['js/*.js', 'css/*.css', 'index.html'],
-  		tasks: ['gh-pages']
+  styles: {
+  		files: ['css/*.css', 'index.html'],
+  		tasks: ['cssmin','gh-pages']
   }
 }
