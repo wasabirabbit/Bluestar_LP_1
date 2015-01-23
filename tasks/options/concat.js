@@ -1,7 +1,10 @@
 module.exports = {
 	dist: {
 	src: [
-		'js/WRR_main.js'
+		'js/BSV_main.js',
+		'js/plugin/*.js',
+		'js/plugin/*.min.js',
+		'js/lib/*.min.js'
 	],
 	dest: 'js/production.js'
    }
