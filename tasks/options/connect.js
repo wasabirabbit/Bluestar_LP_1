@@ -1,8 +1,12 @@
 module.exports = {
 server: {
     options: {
-      port: 8000,
-      base: './'
-    }
+      livereload: 1337,
+      port: 9003,
+      base: '',
+      open: {
+     	target:'http://localhost:9003/',
+     }
+    }  
   }
 }

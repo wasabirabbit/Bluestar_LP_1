@@ -28,5 +28,5 @@ grunt.initConfig(config);
 
 require('load-grunt-tasks')(grunt);
   // Default task(s).
-grunt.registerTask('default', ['concat', 'uglify', 'watch']);
+grunt.registerTask('default', ['concat', 'uglify', 'connect', 'watch']);
 };
