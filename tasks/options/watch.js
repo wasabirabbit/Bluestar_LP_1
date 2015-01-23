@@ -5,7 +5,7 @@ module.exports = {
 
 scripts: {
     files: ['js/*.js'],
-    tasks: ['concat','uglify','gh-pages'],
+    tasks: ['concat','uglify'],
     options: {
       spawn: false,
       livereload: 1337
@@ -14,7 +14,7 @@ scripts: {
 
   styles: {
   		files: ['css/*.css', 'index.html'],
-  		tasks: ['cssmin','gh-pages'],
+  		tasks: ['cssmin'],
       options: {
       livereload: 1337
     }
