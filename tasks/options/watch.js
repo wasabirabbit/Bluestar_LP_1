@@ -13,8 +13,15 @@ scripts: {
   },
 
   styles: {
-  		files: ['css/*.css', 'index.html'],
+  		files: ['css/*.css'],
   		tasks: ['cssmin'],
+      options: {
+      livereload: 1337
+    }
+  },
+
+   html: {
+      files: ['index.html'],
       options: {
       livereload: 1337
     }
