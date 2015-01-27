@@ -102,14 +102,13 @@ $('.trans').each(function(){$(this).height($(this).parent().outerHeight());});
 
 
 // Responsive Menu
-$('header.menu-toggle').click(function () {
+$('.menu-toggle').click(function () {
     $('section.menu-slideout').toggleClass('show');
 });
 
 $('nav.slideout li a').click(function () {
     $('section.menu-slideout').removeClass('show');
 });
-
 
 // Instagram Embed
  var feed = new Instafeed({
