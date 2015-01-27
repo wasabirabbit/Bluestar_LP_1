@@ -435,7 +435,36 @@ footer {
 }
 
 
+.form-wrapper {
+			width: 365px;
+			height: 665px;
+			position: absolute;
+			top: 150px;
+			right: 60px;
+			z-index: 9999;
+		.form {
+			position: fixed;
+			background-image: url(img/sub/BSV_formBG.jpg);
+			background-size: cover;
+			width: 365px;
+			height: 665px;
+			margin-left: 1em;	
 
+			& .days {
+				position: absolute;
+				width: 40%;
+				top: -96px;
+				right: 0;
+			
+			}	
+
+			& button {
+				color: white !important;
+				background-color: @red !important;
+				margin-left: 100px;
+			}	
+		}
+	}
 
 
 //////// Page Styles ////////
@@ -540,6 +569,11 @@ list-style-type: none;
 &.trial-list{
 	& li{
 			padding-top: 10px;
+
+	& img {
+		float: left;
+		padding-right: 10px;
+	}
 	}
 }
 }
@@ -557,10 +591,83 @@ list-style-type: none;
 
 // Responsive Menu
 @media only screen and (max-width: 880px) {
-	nav { 
+		nav { 
 		&.main-nav {display: none;}
 	}
 	header .menu-toggle { display: block;}
+
+	.number {
+		padding-top: 10px !important;
+		& h3 {
+			font-size: 15px;
+			padding-left:20px;
+		}
+	}
+	.logo {
+		width: 45% !important;
+	}
+
+	h1 {
+		font-size: 2em !important; 
+	}
+
+
+	.system {
+	font-size: 9px;
+	& span {
+		padding-right: 5px;
+		padding-left: 0px;
+	}
+}
+
+
+ol {
+list-style-type: none;
+&.event-list{
+& li{
+	padding: 10px;
+	font-size: 1em;
+
+	& img {
+		width: 10%;
+	}
+}
+}
+&.payment-list{
+	& li {
+	padding: 10px;
+	font-size: .7em;
+	& img {
+		float: left;
+		padding-right: 20px;
+		width: 16%;
+
+	}
+	}
+}
+
+&.trial-list{
+	& li{
+			padding-top: 10px;
+
+	& img {
+		padding-right: 10px;
+	}
+	}
+}
+}
+
+.bottom {
+	margin-top: 8em !important;
+	position: relative !important;
+}
+
+.guarantee{
+	& h4 {
+		padding-left: 180px;
+		padding-top: 20px;
+	}
+}
 }
 
 // Foundation [Small]
