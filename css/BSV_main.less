@@ -92,7 +92,7 @@ Author: CWilliams - 2014.08
 .bord-dkorange { border: solid .5em @dkorange;}
 .bord-orange { border: solid .5em @orange;}
 .bord-ltorange { border: solid .5em @ltorange;}
-.bord-red { border: solid .5em @red;}
+.bord-red { border: solid 3px @red;}
 
 
 /* Font Definitions */
@@ -248,7 +248,7 @@ Author: CWilliams - 2014.08
 .clearfix { zoom: 1; }
 
 * { margin: 0; .copernicusBook; text-rendering: geometricprecision;}
-html, body { font-size: 14px; color: @copy;} 
+html, body { font-size: 14px; color: @copy; margin-top: 80px;} 
 .Wrap { width: 100%; min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -100px;}
 .header, .Page-Content, .footer { width: 100%; margin: 0 auto;}
 .push, .footer { clear: both; height: 100px; }
@@ -257,7 +257,7 @@ html, body { font-size: 14px; color: @copy;}
 // a { .transit; &:hover { color: @grey; }}
 p, li { color: @copy; .transit; small{ font-size: .7em;}}
 h1, h2, h3, h4, h5 { margin: 10px 0; .transit;  font-weight: normal; .neutraBook;}
-h1 {} 
+h1 {font-size: 3.3rem !important;} 
 h2 {
 	font-size: 1.5em;
 	text-transform: uppercase;
@@ -287,15 +287,20 @@ header {
 	position: fixed;
 	z-index: 999;
 	width: 100%;
-	height: 65px;
-	& .Logo {
+	height: 80px;
+	margin-top: -80px;
+		& .logo {
 		position: absolute;
-		width: 50px;
+		width: 25%;
 		display: block;
-		margin: 18px;
+		margin: 15px 0 15px 0;
 		margin-left: 35px;
-		float: left;
-		z-index: 999;
+		float: left; 
+		z-index: 999; 
+	}
+
+	& .number{
+		padding-top: 20px;
 	}
 	& .menu-toggle {
 		display: none;
@@ -445,7 +450,20 @@ footer {
 }
 
 
+.system {
+	font-size: 10px;
+	& span {
+		padding-right: 50px;
+		padding-left: 60px;
+	}
+}
 
+.guarantee{
+	& h4 {
+		padding-left: 180px;
+		padding-top: 20px;
+	}
+}
 //////// Module Styles  ////////
 
 .bloks {
@@ -499,7 +517,32 @@ footer {
 	}
 }
 
+ol {
+list-style-type: none;
+&.event-list{
+& li{
+	padding: 10px;
+	font-size: 1.5em;
+}
+}
+&.payment-list{
+	& li {
+	padding: 10px;
+	font-size: 1.5em;
+	& img {
+		float: left;
+		padding-right: 20px;
 
+	}
+	}
+}
+
+&.trial-list{
+	& li{
+			padding-top: 10px;
+	}
+}
+}
 //////// Media Queries [START] ////////
 
 // Foundation [Large]
