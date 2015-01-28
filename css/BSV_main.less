@@ -103,6 +103,11 @@ Author: CWilliams - 2014.08
 .copernicusBook { font-family: 'copernicus_book', Georgia, Times, 'Times New Roman', serif;}
 .copernicusBold { font-family: 'copernicus_bold', Georgia, Times, 'Times New Roman', serif;}
 
+.roboto-regular { font-family: 'Roboto-Regular', Helvetica, Arial, 'sans-serif';}
+.roboto-bold  { font-family: 'Roboto-Bold', Helvetica, Arial, 'sans-serif';}
+.playfair-regular { font-family: 'playfairdisplay-regular', Helvetica, Arial, 'sans-serif';}
+
+
 
 /* Visibility */
 .hide, .Hide, .d-n {
@@ -255,20 +260,20 @@ html, body { font-size: 14px; color: @copy; margin-top: 80px;}
 
 // Typography
 // a { .transit; &:hover { color: @grey; }}
-p, li { color: @copy; .transit; small{ font-size: .7em;}}
-h1, h2, h3, h4, h5 { margin: 10px 0; .transit;  font-weight: normal; .neutraBook;}
-h1 {font-size: 3.3rem !important;} 
+p, li { color: @copy; .transit; .roboto-regular; small{ font-size: .7em;}}
+h1, h2, h3, h4, h5 { margin: 10px 0; .transit;  font-weight: normal;}
+h1 {font-size: 3.3rem !important; .playfair-regular;} 
 h2 {
 	font-size: 1.5em;
 	text-transform: uppercase;
-	.neutraLight;
+	.roboto-regular;
 } 
-h3 {} 
-h4 {} 
+h3 {.roboto-regular;} 
+h4 {.roboto-regular;} 
 h5 {} 
 h6 {}
 
-
+ 
 .f-l{
 	float: left;
 }
@@ -441,29 +446,51 @@ footer {
 			position: absolute;
 			top: 150px;
 			right: 60px;
-			z-index: 9999;
+			z-index: 99999999999;
 		.form {
 			position: fixed;
 			background-image: url(img/sub/BSV_formBG.jpg);
 			background-size: cover;
 			width: 365px;
-			height: 665px;
-			margin-left: 1em;	
+			min-height: 665px;
+			margin-left: 1em;
+			margin-bottom: 1em;	
+			z-index: 9999999999;
+
 
 			& .days {
 				position: absolute;
 				width: 40%;
 				top: -96px;
 				right: 0;
-			
 			}	
+
+				& h3 {
+					padding: 20px;
+				}
+				
+			& form {
+
+				padding-left: 1em;
+				padding-right: 1em;
+				& p{
+				padding-left: 1em;
+				padding-right: 1em;					}
+				}
+
+			& p{
+			padding-left: 1em;
+			padding-right: 1em;
 		}
+		}
+
+
 	}
 
 button {
 				color: white !important;
 				background-color: @red !important;
-				margin-left: 100px;
+				margin-left: 120px;
 			}	
 
 //////// Page Styles ////////
@@ -667,6 +694,16 @@ list-style-type: none;
 		padding-top: 20px;
 	}
 }
+
+.form{
+		& .days {
+			width: 50%;
+		}
+	}
+
+button {
+				margin-left: 40px !important;
+			}	
 }
 
 // Foundation [Small]

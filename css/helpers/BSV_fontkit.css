@@ -1,9 +1,31 @@
 @font-face {
-    font-family: 'copernicus_heavy';
-    src: url('../src/fonts/font-kit/Copernicus-Heavy.eot');
-    src: url('../src/fonts/font-kit/Copernicus-Heavy.eot?#iefix') format('embedded-opentype'),
-         url('../src/fonts/font-kit/Copernicus-Heavy.woff') format('woff'),
-         url('../src/fonts/font-kit/Copernicus-Heavy.svg#copernicus_heavy') format('svg');
+    font-family: 'Roboto-Regular';
+    src: url('../src/fonts/font-kit/Roboto-Regular-webfont.eot');
+    src: url('../src/fonts/font-kit/Roboto-Regular-webfont.ttf') format('ttf'),
+         url('../src/fonts/font-kit/Roboto-Regular-webfont.woff') format('woff'),
+         url('../src/fonts/font-kit/Roboto-Regular-webfont.svg#copernicus_heavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'playfairdisplay-regular';
+    src: url('../src/fonts/font-kit/playfairdisplay-regular-webfont.eot');
+    src: url('../src/fonts/font-kit/playfairdisplay-regular-webfont.ttf') format('ttf'),
+         url('../src/fonts/font-kit/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('../src/fonts/font-kit/playfairdisplay-regular-webfont.svg#copernicus_heavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../src/fonts/font-kit/Roboto-Bold-webfont.eot');
+    src: url('../src/fonts/font-kit/Roboto-Bold-webfont.ttf') format('ttf'),
+         url('../src/fonts/font-kit/Roboto-Bold-webfont.woff') format('woff'),
+         url('../src/fonts/font-kit/Roboto-Bold-webfont.svg#copernicus_heavy') format('svg');
     font-weight: normal;
     font-style: normal;
 }
