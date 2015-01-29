@@ -29,3 +29,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+@font-face {
+    font-family: 'Roboto-BoldItalic';
+    src: url('../src/fonts/font-kit/Roboto-BoldItalic-webfont.eot');
+    src: url('../src/fonts/font-kit/Roboto-BoldItalic-webfont.ttf') format('ttf'),
+         url('../src/fonts/font-kit/Roboto-BoldItalic-webfont.woff') format('woff'),
+         url('../src/fonts/font-kit/Roboto-BoldItalic-webfont.svg#copernicus_heavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -92,7 +92,7 @@ Author: CWilliams - 2014.08
 .bord-dkorange { border: solid .5em @dkorange;}
 .bord-orange { border: solid .5em @orange;}
 .bord-ltorange { border: solid .5em @ltorange;}
-.bord-red { border: solid 3px @red;}
+.bord-red { border: solid 7px @red;}
 
 
 /* Font Definitions */
@@ -105,6 +105,7 @@ Author: CWilliams - 2014.08
 
 .roboto-regular { font-family: 'Roboto-Regular', Helvetica, Arial, 'sans-serif';}
 .roboto-bold  { font-family: 'Roboto-Bold', Helvetica, Arial, 'sans-serif';}
+.roboto-bold-i  { font-family: 'Roboto-BoldItalic', Helvetica, Arial, 'sans-serif';}
 .playfair-regular { font-family: 'playfairdisplay-regular', Helvetica, Arial, 'sans-serif';}
 
 
@@ -219,8 +220,7 @@ p, li { color: @copy; .transit; .roboto-regular; small{ font-size: .7em;}}
 h1, h2, h3, h4, h5 { margin: 10px 0; .transit;  font-weight: normal;}
 h1 {font-size: 3.3rem !important; .playfair-regular;} 
 h2 {
-	font-size: 1.5em;
-	text-transform: uppercase;
+	font-size: 2.5em;
 	.roboto-regular;
 } 
 h3 {.roboto-regular;} 
@@ -247,11 +247,11 @@ header {
 	position: fixed;
 	z-index: 999;
 	width: 100%;
-	height: 85px;
-	margin-top: -80px;
+	height: 95px;
+	margin-top: -80px; 
 		& .logo {
 		display: block;
-		margin: 15px 0 15px 0;
+		margin: 20px 0 15px 0;
 		float: left; 
 		z-index: 999; 
 	}
@@ -267,7 +267,7 @@ header {
 		-o-transition: all .2s;
 		-ms-transition: all .2s;
 		transition: all .2s;
-		padding: 24px 0 0 0;
+		padding: 24px 10px 0 0;
 		float: right;
 		&:hover {
 			cursor: pointer;
@@ -422,6 +422,7 @@ footer {
 				& h3 {
 					padding: 20px;
 				}
+
 				
 			& form {
 
@@ -429,7 +430,11 @@ footer {
 				padding-right: 1em;
 				& p{
 				padding-left: 1em;
-				padding-right: 1em;					}
+				padding-right: 1em;		
+					}
+				& input {
+					border: 1px solid @blue !important;
+					}
 				}
 
 			& p{
@@ -443,6 +448,7 @@ footer {
 
 .button {
 				color: white !important;
+				text-transform: uppercase;
 				background-color: red !important;    
 				margin-left: 120px;
 			}	
@@ -523,6 +529,10 @@ list-style-type: none;
 & li{
 	padding: 10px;
 	font-size: 1.5em;
+
+	& img {
+		padding-right: 20px;
+	}
 }
 }
 &.payment-list{
@@ -539,12 +549,13 @@ list-style-type: none;
 
 &.trial-list{
 	& li{
-			padding-top: 10px;
+			padding-bottom: 3px;
+}
 
 	& img {
 		float: left;
 		padding-right: 10px;
-	}
+	
 	}
 }
 }
@@ -556,12 +567,20 @@ list-style-type: none;
 }
 
 // Foundation [Medium]
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1324px) {
 	html, body { font-size: 14px;}
 header .menu-toggle { display: block;}
 	.form-wrapper {
 		display: none;
 	}
+
+	.system {
+	font-size: 10px;
+	& span {
+		padding-right: 30px;
+		padding-left: 20px;
+	}
+}
 }
 
 // Responsive Menu
