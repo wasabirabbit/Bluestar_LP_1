@@ -14,7 +14,7 @@ scripts: {
 
   styles: {
   		files: ['css/*.css'],
-  		tasks: ['cssmin'],
+  		tasks: ['cssmin','sftp:css'],
       options: {
       livereload: 1337
     }
@@ -22,6 +22,7 @@ scripts: {
 
    html: {
       files: ['index.html'],
+      tasks: ['sftp:index'],
       options: {
       livereload: 1337
     }

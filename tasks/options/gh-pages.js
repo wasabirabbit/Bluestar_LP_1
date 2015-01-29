@@ -1,7 +1,7 @@
 module.exports = {
 'gh-pages': {
     options: {
-      branch: 'master',
+    	branch: 'master',
     },
     src: ['**']
   }
