@@ -1,7 +1,7 @@
 module.exports = {
   upload:{
 
-  	   files:{"./": "**/**"} 
+  	   files:{"./": "output.min.css"} 
   },
     options: {
       host: '<%= sshlogininfo.host %>',
