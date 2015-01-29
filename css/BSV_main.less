@@ -569,7 +569,15 @@ list-style-type: none;
 // Foundation [Medium]
 @media only screen and (max-width: 1324px) {
 	html, body { font-size: 14px;}
-header .menu-toggle { display: block;}
+	header .menu-toggle { 
+		&.mini {
+			display: none;
+		}
+
+		&.bigger{
+			display: block;
+		}
+	}
 	.form-wrapper {
 		display: none;
 	}
@@ -588,7 +596,15 @@ header .menu-toggle { display: block;}
 		nav { 
 		&.main-nav {display: none;}
 	}
-	header .menu-toggle { display: block;}
+	header .menu-toggle { 
+		&.mini {
+			display: none;
+		}
+
+		&.bigger{
+			display: block;
+		}
+	}
 
 	.number {
 		padding-top: 10px !important;
@@ -689,6 +705,16 @@ list-style-type: none;
 	.text-word-col { -moz-column-count: 1; -webkit-column-count: 1; column-count: 1;}
 	h2.large-for-small {
 		font-size: 2.75em;
+	}
+
+	header .menu-toggle { 
+		&.mini {
+			display: block;
+		}
+
+		&.bigger {
+			display: none;
+		}
 	}
 }
 
